@@ -1,0 +1,37 @@
+{
+  "name": "relactcapm",
+  "description": "Relevant Activities implementd in CAPM",
+  "repository": "https://github.com/balbinosoares/realactcapm",
+  "license": "MIT",
+  "version": "0.0.1",
+  "engines": {
+    "node": "^8.9"
+  },
+  "files": [],
+  "dependencies": {
+    "@sap/cds": "^3.5.2",
+    "express": "^4.16.4"
+  },
+  "scripts": {
+    "start": "cds run",
+    "build": "cds build/all --clean",
+    "deploy": "cds deploy"
+  },
+  "devDependencies": {
+    "sqlite3": "^4.0.6"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "model": [
+          "db",
+          "srv"
+        ],
+        "credentials": {
+          "database": "db/relactcapm.db"
+        }
+      }
+    }
+  }
+}

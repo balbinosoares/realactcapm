@@ -41,7 +41,7 @@ You can now access the services via
 ### Initialize the Local Database
 Run the following command to Initialize your local SQLite DB:
 ```sh
-cds deploy --to sqlite:db/realactcapm.db
+cds deploy --to sqlite:db/relactcapm.db
 ```
 Do not forget to repeat this step to initialize the local database whenever you changed the datamodel
 

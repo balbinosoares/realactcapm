@@ -12,7 +12,7 @@ entity Weeks : managed {
         activities: Association to many Activities;
 }
 
-entity Coordenations : managed {
+entity Coordinates : managed {
     key id: Integer;
         name: String(100);
         manager: User;
@@ -23,7 +23,7 @@ entity Teams : managed {
     key id: Integer;
         name: String(100) not null;
         activities: Association to many Activities;
-        coordenation: Association to Coordenations;
+        coordenation: Association to Coordinates;
 }
 
 entity Activities : managed {
